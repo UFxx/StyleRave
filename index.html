@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +10,146 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/index/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
 
     <title>Главная</title>
 </head>
+
 <body>
 
     <header>
-        
+
+        <nav>
+            <div class="categorie-photo">
+                <img src="assets/img/index/blazer.webp" alt="">
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="">help</a></li>
+                    <li><a href="">sign in</a></li>
+                    <li><a href="">sign up</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header">
+            <div class="header-logo">
+                <p>stylerave</p>
+            </div>
+            <div class="header-text">
+                <p>style... style - this everything</p>
+            </div>
+            <div class="header-buttons">
+                <div class="header-search"><i class="fas fa-search"></i></div>
+                <i class="fas fa-shopping-basket"></i>
+            </div>
+        </div>
+
+        <div class="header-categories">
+            <ul>
+                <li>for men</li>
+                <li>for women</li>
+                <li>for kids</li>
+                <li>sales</li>
+                <li>new</li>
+            </ul>
+        </div>
+
     </header>
-    
+
+    <main>
+        <div class="categories">
+            <p class="categorie-title">for men</p>
+            <ul>
+                <li><a href="#">jackets</a></li>
+                <li><a href="#">t-shirts</a></li>
+                <li><a href="#">shirts</a></li>
+                <li><a href="#">accessories</a></li>
+                <li><a href="#">trousers</a></li>
+            </ul>
+        </div>
+
+        <div class="filters">
+            <p class="hide-filter-button">hide filters</p>
+            <p>sort <i class="fas fa-sort"></i></p>
+        </div>
+
+        <div class="products">
+
+            <div class="products-item">
+                <div class="product-img">
+                    <a href=""><img src="assets/img/index/products/product-photo1.png" alt=""></a>
+                </div>
+                <div class="products-item-description">
+                    <p class="product-name">name</p>
+                    <p class="collection-name">collection name</p>
+                    <p class="product-price">$<span>1200</span></p>
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="product-img">
+                    <a href=""><img src="assets/img/index/products/product-photo2.png" alt=""></a>
+                </div>
+                <div class="products-item-description">
+                    <p class="product-name">name</p>
+                    <p class="collection-name">collection name</p>
+                    <p class="product-price">$<span>2200</span></p>
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="product-img">
+                    <a href=""><img src="assets/img/index/products/product-photo3.png" alt=""></a>
+                </div>
+                <div class="products-item-description">
+                    <p class="product-name">name</p>
+                    <p class="collection-name">collection name</p>
+                    <p class="product-price">$<span>200</span></p>
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="product-img">
+                    <a href=""><img src="assets/img/index/products/product-photo4.png" alt=""></a>
+                </div>
+                <div class="products-item-description">
+                    <p class="product-name">name</p>
+                    <p class="collection-name">collection name</p>
+                    <p class="product-price"><span>free</span></p>
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="product-img">
+                    <a href=""><img src="assets/img/index/products/product-photo4.png" alt=""></a>
+                </div>
+                <div class="products-item-description">
+                    <p class="product-name">name</p>
+                    <p class="collection-name">collection name</p>
+                    <p class="product-price"><span>free</span></p>
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="product-img">
+                    <a href=""><img src="assets/img/index/products/product-photo4.png" alt=""></a>
+                </div>
+                <div class="products-item-description">
+                    <p class="product-name">name</p>
+                    <p class="collection-name">collection name</p>
+                    <p class="product-price"><span>free</span></p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/index/filters.js"></script>
+    <script src="assets/js/index/stickyFilters.js"></script>
 </body>
+
 </html>
