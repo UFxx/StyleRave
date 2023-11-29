@@ -1,0 +1,118 @@
+body::-webkit-scrollbar {
+    width: 0;
+    /* ширина всей полосы прокрутки */
+}
+
+.video {
+    position: relative;
+    height: calc(100vh - 65px);
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 72px;
+    overflow: hidden;
+}
+
+.video video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(1.267);
+}
+
+.categories {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    height: calc(100vh + 1px);
+    z-index: 2;
+
+    box-sizing: border-box;
+    padding: 80px 60px;
+
+    transition: .3s ease top;
+}
+
+.categories-hidden {
+    top: 100%;
+}
+
+.categories-item {
+    position: relative;
+    width: 450px;
+    height: 250px;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+
+    transition: .3s ease box-shadow;
+}
+
+.categorie-name {
+    font-size: 64px;
+    color: white;
+    z-index: 1;
+}
+
+.categories-item:hover {
+    box-shadow: 0 0 4px 1px gray;
+}
+
+.categories-item::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    filter: blur(2px) saturate(0);
+    transition: .3s ease filter;
+}
+
+.men::before {
+    background: url('../../img/index/categories/categorie-men.jpg');
+    background-size: cover;
+}
+
+.categories-item:hover::before {
+    filter: blur(2px) saturate();
+}
+
+.women::before {
+    background: url('../../img/index/categories/categorie-women.jpeg');
+    background-size: cover;
+}
+
+.kids::before {
+    background: url('../../img/index/categories/categorie-kids.jpg');
+    background-size: cover;
+}
+
+.slider-circles {
+    position: fixed;
+    left: calc(100% - 20px);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.slider-circles div {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 100%;
+    border: 1px solid black;
+
+    transition: .3s ease background-color;
+}
+
+.slider-circles div:last-child {
+    background-color: white;
+    margin-top: 5px;
+}
