@@ -18,10 +18,10 @@
         <script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="assets/css/index/index.css">
+        <link rel="stylesheet" href="assets/css/login/login.css">
         <link rel="stylesheet" href="assets/css/header.css">
 
-        <title>HOME PAGE</title>
+        <title>SIGN IN</title>
     </head>
 
 <body>
@@ -61,41 +61,38 @@
     </header>
 
     <main>
-        <div class="slider-circles">
-            <div class="slider-circles-item slider-circile-video"></div>
-            <div class="slider-circles-item slider-circile-categories"></div>
-        </div>
-        <div class="video">
-            <video src="assets/img/index/index-video.mp4" autoplay muted loop></video>
-        </div>
-        <div class="categories categories-hidden">
-            <div class="categories-item men">
-                <p class="categorie-name">for men</p>
+        <form action="" class="login-form">
+            <p>sign in</p>
+            <input type="email" name="" id="" placeholder="example@mail.ru">
+            <input type="password" name="" id="" placeholder="••••••••">
+
+            <div class="remember-me-checkbox-container">
+                <input type="checkbox" name="" id="remeber-me-checkbox">
+                <label for="remeber-me-checkbox">remeber me</label>
             </div>
-            <div class="categories-item women">
-                <p class="categorie-name">for women</p>
+
+            <a href="#">i forgot password or email</a>
+            <button type="submit">login</button>
+
+            <div class="login-social-networks">
+                <a href="#">
+                    <div class="login-social-network-item vk"></div>
+                </a>
+                <a href="#">
+                    <div class="login-social-network-item github"></div>
+                </a>
+                <a href="#">
+                    <div class="login-social-network-item facebook"></div>
+                </a>
+                <a href="#">
+                    <div class="login-social-network-item google"></div>
+                </a>
             </div>
-            <div class="categories-item kids">
-                <img src="" alt="">
-                <p class="categorie-name">for kids</p>
-            </div>
-            <div class="categories-item">
-                <img src="" alt="">
-                <p class="categorie-name"></p>
-            </div>
-            <div class="categories-item">
-                <img src="" alt="">
-                <p class="categorie-name"></p>
-            </div>
-            <div class="categories-item">
-                <img src="" alt="">
-                <p class="categorie-name"></p>
-            </div>
-        </div>
+
+        </form>
     </main>
 
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/index/index.js"></script>
 </body>
 
 </html>

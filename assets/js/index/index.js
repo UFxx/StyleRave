@@ -11,5 +11,4 @@ window.addEventListener('scroll', () => {
             categoriesSliderCircle.style.backgroundColor = 'white';
             videoSliderCircle.style.backgroundColor = 'black';
         }
-        // console.log(scrollY);
 })

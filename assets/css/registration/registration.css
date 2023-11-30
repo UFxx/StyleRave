@@ -1,0 +1,66 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 65px);
+}
+
+.registration-form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.registration-form div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.registration-form p:first-child {
+    position: absolute;
+    text-align: center;
+    font-size: 32px;
+    top: -25%;
+}
+
+#birthday-date {
+    position: absolute;
+    top: 105%;
+}
+
+#registration-button {
+    position: absolute;
+    top: 135%;
+    padding: 10px 20px;
+    border: 2px solid #FFE600;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+
+    transition: .3s ease background-color;
+}
+
+#registration-button:hover {
+    background-color: #ffe60071;
+}
+
+.registration-form input {
+    border: 2px solid black;
+    padding: 10px 0 10px 10px;
+    outline: none;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    width: 250px;
+}
+
+.registration-form input::placeholder {
+    transition: .3s ease transform;
+}
+
+.registration-form input:focus::placeholder {
+    transform: translateY(-150%);
+}

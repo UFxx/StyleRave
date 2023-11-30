@@ -18,10 +18,10 @@
         <script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="assets/css/index/index.css">
+        <link rel="stylesheet" href="assets/css/registration/registration.css">
         <link rel="stylesheet" href="assets/css/header.css">
 
-        <title>HOME PAGE</title>
+        <title>SIGN UP</title>
     </head>
 
 <body>
@@ -61,41 +61,26 @@
     </header>
 
     <main>
-        <div class="slider-circles">
-            <div class="slider-circles-item slider-circile-video"></div>
-            <div class="slider-circles-item slider-circile-categories"></div>
-        </div>
-        <div class="video">
-            <video src="assets/img/index/index-video.mp4" autoplay muted loop></video>
-        </div>
-        <div class="categories categories-hidden">
-            <div class="categories-item men">
-                <p class="categorie-name">for men</p>
+        <form class="registration-form">
+            <p class="registration-title">sign up</p>
+            <div>
+                <input type="text" placeholder="first name">
+                <input type="text" placeholder="username">
+                <input type="password" placeholder="password">
+                <input type="password" placeholder="repeat password">
             </div>
-            <div class="categories-item women">
-                <p class="categorie-name">for women</p>
+            <div>
+                <input type="text" placeholder="last name">
+                <input type="email" placeholder="example@mail.ru">
+                <input type="text" placeholder="adress">
+                <input type="tel" placeholder="phone number">
             </div>
-            <div class="categories-item kids">
-                <img src="" alt="">
-                <p class="categorie-name">for kids</p>
-            </div>
-            <div class="categories-item">
-                <img src="" alt="">
-                <p class="categorie-name"></p>
-            </div>
-            <div class="categories-item">
-                <img src="" alt="">
-                <p class="categorie-name"></p>
-            </div>
-            <div class="categories-item">
-                <img src="" alt="">
-                <p class="categorie-name"></p>
-            </div>
-        </div>
+            <input type="text" name="" id="birthday-date" placeholder="birthday date">
+            <button id="registration-button">registration</button>
+        </form>
     </main>
 
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/index/index.js"></script>
 </body>
 
 </html>

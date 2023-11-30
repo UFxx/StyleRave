@@ -4,6 +4,16 @@
     font-family: 'Julius Sans One', sans-serif;
 }
 
+::selection {
+    background: black;
+    color: white;
+}
+
+::-moz-selection {
+    background: black;
+    color: white;
+}
+
 a {
     text-decoration: none;
     color: black;
