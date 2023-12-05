@@ -19,6 +19,24 @@ a {
     color: black;
 }
 
+input {
+    border: 2px solid black;
+    padding: 10px 0 10px 10px;
+    outline: none;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    width: 250px;
+}
+
+input::placeholder {
+    transition: .3s ease transform;
+}
+
+input:focus::placeholder {
+    transform: translateY(-150%);
+}
+
 header nav {
     height: 25px;
     padding: 0 20px;

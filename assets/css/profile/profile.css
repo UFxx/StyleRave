@@ -1,0 +1,106 @@
+main {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-photo img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.orders {
+    margin-top: 30px;
+}
+
+.orders-title {
+    font-size: 32px;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+form div {
+    margin-top: 10px;
+}
+
+form input[type="file"]::-webkit-file-upload-button {
+    display: none;
+}
+
+form input[type="file"] {
+    width: calc(100% - 12px);
+    color: transparent;
+    cursor: pointer;
+}
+
+form input[type="file"]+label {
+    font-size: 18px;
+    z-index: 1;
+    cursor: pointer;
+    margin-top: -40px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid #FFE500;
+    outline: none;
+    cursor: pointer;
+    transition: .3s ease background-color;
+}
+
+form button:hover {
+    background-color: #ffe60071;
+}
+
+table {
+    margin-top: 30px;
+    text-decoration: none;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+table th {
+    font-weight: normal;
+    font-size: 24px;
+}
+
+table td {
+    font-size: 18px;
+    color: #354251;
+}
+
+table td,
+table th {
+    white-space: pre-wrap;
+    padding: 10px 10px;
+    line-height: 13px;
+    vertical-align: middle;
+}
+
+table.iksweb tr:hover {
+    background-color: #f9fafb
+}
+
+table tr:hover td {
+    cursor: pointer;
+}
