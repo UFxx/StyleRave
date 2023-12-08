@@ -19,10 +19,12 @@ main {
 }
 
 .item-description {
+    position: relative;
     font-size: 18px;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    overflow: hidden;
 }
 
 .item-description i {
@@ -42,4 +44,31 @@ main {
     white-space: nowrap;
     align-items: center;
     margin: 30px 0 30px 1120px;
+}
+
+.delete-button {
+    position: absolute;
+    background-color: black;
+    height: calc(100% + 20px);
+    width: 40px;
+    right: 0;
+    top: -200%;
+    transition: .3s ease top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-button i {
+    color: white;
+    font-size: 20px;
+    transition: .3s ease color;
+}
+
+.delete-button i:hover {
+    color: rgb(110, 110, 110);
+}
+
+.item:hover .delete-button {
+    top: -10px;
 }
