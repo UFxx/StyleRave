@@ -1,0 +1,63 @@
+main {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table {
+    margin-top: 30px;
+    text-decoration: none;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+table th {
+    font-weight: normal;
+    font-size: 24px;
+}
+
+table td {
+    font-size: 18px;
+    color: #354251;
+}
+
+table td,
+table th {
+    white-space: pre-wrap;
+    padding: 10px 30px;
+    line-height: 13px;
+    vertical-align: middle;
+}
+
+table.iksweb tr:hover {
+    background-color: #f9fafb
+}
+
+table tr:hover td {
+    cursor: pointer;
+}
+
+table tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.order-title {
+    font-size: 32px;
+    text-align: center;
+}
+
+.order {
+    position: relative;
+}
+
+.order-price {
+    position: absolute;
+    left: 90%;
+    margin-top: 50px;
+    font-size: 24px;
+    white-space: nowrap;
+}

@@ -18,10 +18,10 @@
         <script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="assets/css/registration/registration.css">
+        <link rel="stylesheet" href="assets/css/order/order.css">
         <link rel="stylesheet" href="assets/css/header.css">
 
-        <title>SIGN UP</title>
+        <title>ORDER</title>
     </head>
 
 <body>
@@ -61,26 +61,43 @@
     </header>
 
     <main>
-        <form class="registration-form">
-            <p class="registration-title">sign up</p>
-            <div>
-                <input type="text" placeholder="first name">
-                <input type="text" placeholder="username">
-                <input type="password" placeholder="password">
-                <input type="password" placeholder="repeat password">
+        <div class="order">
+            <p class="order-title">order id: <span>1</span></p>
+            <div class="order-info">
+                <table>
+                    <thead>
+                        <tr>
+                            <a href="">
+                                <th>name</th>
+                                <th>count</th>
+                                <th>price</th>
+                                <th>sum</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="/product.html">muzhik 1</a></td>
+                            <td>1</td>
+                            <td>$16</td>
+                            <td class="product-sum">$16</td>
+                        </tr>
+                        <tr>
+                            <td><a href="/product.html">muzhik 2</a></td>
+                            <td>5</td>
+                            <td>$953</td>
+                            <td class="product-sum">$4765</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div>
-                <input type="text" placeholder="last name">
-                <input type="email" placeholder="example@mail.ru">
-                <input type="text" placeholder="adress">
-                <input type="tel" placeholder="phone number">
+            <div class="order-price">
+                <p>total sum: $<span class="order-sum"></span></p>
             </div>
-            <input type="text" name="" id="birthday-date" placeholder="birthday date">
-            <button id="registration-button">registration</button>
-        </form>
+        </div>
     </main>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/order/order.js"></script>
 </body>
 
 </html>
