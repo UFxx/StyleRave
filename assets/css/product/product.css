@@ -1,0 +1,131 @@
+body {
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.product {
+    display: flex;
+}
+
+.product-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 15px;
+    margin-left: 30px;
+    overflow: hidden;
+    height: 400px;
+}
+
+.product-slider-line {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    width: 64px;
+    
+    transition: .3s ease margin-top;
+}
+
+.product-slider-item {
+    width: 60px;
+    height: 60px;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.product-slider-item__active {
+    border: 1px solid black;
+}
+
+.product-slider-item img {
+    width: 50px;
+    height: 60px;
+}
+
+.product-slider i {
+    cursor: pointer;
+    z-index: 2;
+    color: black;
+    position: absolute;
+    top: 80px;
+}
+
+.product-slider i:last-child {
+    top: 500px;
+}
+
+.product-info {
+    margin-left: 60px;
+}
+
+.product-title {
+    font-size: 32px;
+}
+
+.product-description {
+    line-height: 30px;
+    font-size: 20px;
+    width: 360px;
+    margin-top: 10px;
+}
+
+.product-sizes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 330px;
+    height: 120px;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.product-sizes button {
+    width: calc(100% - 65px);
+}
+
+.product-size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    border: 1px solid black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.product-size-disabled {
+    border: 1px solid gray;
+    color: gray;
+}
+
+.product-size-choosing {
+    border: 1px solid rgb(6, 191, 6);
+    color: rgb(6, 191, 6);
+}
+
+.added-to-cart {
+    position: absolute;
+    color: white;
+    right: -15%;
+    bottom: 0;
+    opacity: 0;
+    padding: 20px;   
+    background-color: rgb(0, 188, 0);
+    font-weight: bold;
+
+    transition: .3s ease right;
+}
+
+.added-to-cart p i {
+    margin-right: 10px;
+}
