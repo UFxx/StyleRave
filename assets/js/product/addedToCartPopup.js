@@ -1,4 +1,4 @@
-const addToCartButton = document.querySelector('.product-sizes');
+const addToCartButton = document.querySelector('.product-sizes button');
 const addedToCartPopup = document.querySelector('.added-to-cart');
 
 addToCartButton.addEventListener('click', () => {

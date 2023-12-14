@@ -1,0 +1,98 @@
+main {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-order-title {
+    font-size: 32px;
+    text-align: center;
+}
+
+.create-order-container {
+    margin-top: 30px;
+    display: flex;
+}
+
+.create-order-item-title {
+    font-size: 24px;
+}
+
+.create-order-item-title {
+    text-align: center;
+}
+
+.delivery-information form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+}
+
+#email-input,
+#adress-input,
+form button {
+    width: calc(100% - 10px);
+    text-align: center;
+}
+
+form button {
+    width: 100%;
+}
+
+.order-contents {
+    margin-left: 100px;
+}
+
+.order-container {
+    position: relative;
+    margin-top: 25px;
+    border: 2px solid black;
+    width: 370px;
+    height: 280px;
+
+    overflow-y: scroll;
+}
+
+.order-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.order-container::-webkit-scrollbar-track {
+    background: white;
+}
+
+.order-container::-webkit-scrollbar-thumb {
+    background-color: black;
+    border: 3px solid white;
+}
+
+.order-container:last-child {
+    border-bottom: none;
+}
+
+.order-container-item {
+    padding: 20px;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-container-item div {
+    display: flex;
+    column-gap: 25px;
+}
+
+.order-container-total-sum {
+    position: fixed;
+    top: 494px;
+    width: calc(370px - 40px);
+    padding: 20px;
+    /* border-top: 2px solid #FFE500; */
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}

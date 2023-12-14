@@ -17,7 +17,7 @@ function sliderOffset(arrow) {
         } else if (arrow == arrowUp) {
             offset += 70;
             if (offset === 70) {
-                offset = 0;
+                offset = -maxOffset;
             }
             sliderLine.style.marginTop = offset + 'px';
         }
