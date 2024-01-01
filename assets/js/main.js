@@ -13,7 +13,6 @@ const phrases = [
 window.addEventListener('load', () => {
     const randomNumber = Math.round(Math.random() * phrases.length - 1);
     headerPhrase.children[0].textContent = phrases[randomNumber];
-    headerPhrase.style.top = '35px';
 })
 
 // Search on click
