@@ -39,11 +39,13 @@ main {
 }
 
 .order-all-button {
+    position: absolute;
     display: flex;
     column-gap: 20px;
     white-space: nowrap;
     align-items: center;
-    margin: 30px 0 30px 1120px;
+    right: 130px;
+    padding: 0 0 10px 0;
 }
 
 .delete-button {
