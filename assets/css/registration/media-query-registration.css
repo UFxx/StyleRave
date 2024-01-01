@@ -1,0 +1,48 @@
+@media (max-width: 560px) {
+    .registration-form input {
+        padding: 7px 0 7px 7px;
+        font-size: 14px;
+        width: 150px;
+    }
+
+    .registration-form input::placeholder {
+        font-size: 14px;
+    }
+
+    #birthday-date {
+        margin-top: 5px;
+    }
+
+    #registration-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 370px) {
+    .registration-form {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .registration-form input {
+        text-align: center;
+        margin: 0;
+    }
+
+    #registration-button {
+        top: 117%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .registration-title {
+        margin-top: 25px;
+    }
+
+    #birthday-date {
+        margin-top: -5px;
+    }
+}
