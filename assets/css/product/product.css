@@ -12,6 +12,11 @@ main {
     display: flex;
 }
 
+.product-img img {
+     width: 300px;
+     height: 400px;
+}
+
 .product-slider {
     display: flex;
     flex-direction: column;
