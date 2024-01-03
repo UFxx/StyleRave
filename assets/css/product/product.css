@@ -96,7 +96,18 @@ main {
 }
 
 .product-sizes button {
-    width: calc(100% - 65px);
+    position: relative;
+    margin-left: 0px;   
+    width: calc(330px - 65px);
+    white-space: nowrap;
+    height: 40px;
+    margin-top: 0;
+}
+
+.product-sizes button span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .product-size {
