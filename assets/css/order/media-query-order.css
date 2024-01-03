@@ -1,0 +1,38 @@
+@media (max-width: 860px) {
+    .order-price {
+        left: 62%;
+    }
+}
+
+@media (max-width: 600px) {
+    .order-price {
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    table th {
+        font-size: 18px;
+    }
+
+    table td {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    table td, table th {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 370px) {
+    table td, table th {
+        padding: 10px 7px;
+    }
+
+    tr td:nth-child(2) {
+        text-align: center;
+    }
+}

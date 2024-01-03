@@ -26,10 +26,10 @@ table td {
 
 table td,
 table th {
-    white-space: pre-wrap;
     padding: 10px 30px;
     line-height: 13px;
     vertical-align: middle;
+    white-space: nowrap;
 }
 
 table.iksweb tr:hover {
