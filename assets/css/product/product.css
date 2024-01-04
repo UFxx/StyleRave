@@ -147,3 +147,17 @@ main {
 .added-to-cart p i {
     margin-right: 10px;
 }
+
+.product-price {
+    font-size: 20px;
+}
+
+#product-old-price {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: line-through;
+    font-size: 16px;
+}
+
+#product-old-price::before {
+    content: '$';
+}

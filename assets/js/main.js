@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
 const headerSearch = document.querySelector('.header-search input[type="search"]');
 const headerSearchIcon = document.querySelector('.header-search i');
 const headerSearchContainer = document.querySelector('.header-search');
-headerSearchIcon.addEventListener('click', () => {
+headerSearchContainer.addEventListener('click', () => {
     headerSearch.style.width = '150px';
     headerSearch.style.backgroundColor = 'white';
     headerSearchIcon.style.marginLeft = '-150px';
