@@ -1,0 +1,76 @@
+@media (max-width: 573px) {
+    form input {
+        width: 200px;
+    }
+
+    table th {
+        font-size: 18px;
+    }
+
+    table td {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 474px) {
+    form input::placeholder, form input[type="file"] + label {
+        font-size: 16px;
+    }
+
+    form input {
+        width: 150px;
+        font-size: 16px;
+    }
+
+    form input[type="file"] {
+        width: 320px;
+    }
+
+    form button {
+        width: 335px;
+    }    
+}
+
+@media (max-width: 391px) {
+    table th {
+        font-size: 16px;
+    }
+
+    table td {
+        font-size: 14px;
+    }
+
+    .profile-photo img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 351px) {
+    form input::placeholder {
+        font-size: 14px;
+    }
+
+    form input {
+        padding: 7px 0 7px 7px;
+        width: 110px;
+        font-size: 14px;
+    }
+
+    form input[type="file"] {
+        width: 237px;
+    }
+
+    form input[type="file"] + label {
+        margin-top: -35px;
+    }
+
+    form button {
+        width: 250px;
+        font-size: 16px;
+    }
+
+    table td, table th {
+        padding: 5px;
+    }
+}
