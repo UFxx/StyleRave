@@ -1,0 +1,91 @@
+@media (max-width: 1040px) {
+    .create-order-container {
+        flex-direction: column;
+    }
+
+    .create-order-item-title {
+        margin-left: -50px;
+    }
+
+    .order-contents {
+        margin-top: 30px;
+        padding-bottom: 30px;
+        overflow-x: hidden;
+    }
+    
+    .order-container-total-sum {
+        position: static;
+        border-bottom: 2px solid black;
+    }
+    
+    .order-container {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 564px) {
+    .delivery-information form input {
+        width: 200px;
+    }
+
+    #email-input, #adress-input {
+        width: 420px;
+    }
+
+    form input, #email-input::placeholder, #adress-input::placeholder {
+        font-size: 16px;
+    }
+
+    form button {
+        width: 435px;
+    }
+
+    .order-contents {
+        margin-left: 40px;
+    }
+
+    .create-order-item-title {
+        margin-left: -20px;
+    }
+}
+
+@media (max-width: 457px) {
+    .delivery-information form input {
+        width: 130px;
+    }
+
+    #email-input, #adress-input {
+        width: 280px;
+    }
+
+    form input, #email-input::placeholder {
+        font-size: 14px;
+    }
+
+    #adress-input::placeholder {
+        font-size: 11px;
+    }
+
+    form button {
+        width: 295px;
+    }
+
+    .order-contents {
+        margin-left: -5px;
+    }
+
+    .order-container {
+        width: 310px;
+        margin-left: 20px;
+    }
+
+    .order-container-item {
+        width: 260px;
+    }
+}
+
+@media (max-width: 340px) {
+    .order-container {
+        margin: 20px auto;
+    }
+}
