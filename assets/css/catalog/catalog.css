@@ -69,6 +69,41 @@ main {
     text-overflow: ellipsis;
 }
 
+.products-item-description {
+    position: relative;
+    overflow: hidden;
+}
+
+.add-to-basket__button {
+    position: absolute;
+    left: calc(100% - (21px + 14px));
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 70px;
+    top: -120%;
+    padding: 0 7px;
+
+    transition: .3s ease top;
+}
+
+.add-to-basket__button i {
+    color: white;
+    cursor: pointer;
+
+    transition: .3s ease color;
+}
+
+.add-to-basket__button i:hover {
+    color: gray;
+}
+
+.products-item:hover .add-to-basket__button {
+    top: 0;
+}
+
 .filters {
     position: absolute;
     display: flex;
