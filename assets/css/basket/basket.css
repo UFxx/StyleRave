@@ -32,6 +32,12 @@ main {
     overflow: hidden;
 }
 
+.item-description p {
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .item-description i {
     cursor: pointer;
     user-select: none;
