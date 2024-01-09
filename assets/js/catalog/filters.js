@@ -4,8 +4,14 @@ const headerCategoriesContainer = document.querySelector('.header-categories');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 110) {
         filtersContainer.classList.add('filters-sticky');
+
+        if (categoriesContainer.classList.contains('categories-hidden')) {
+            productsContainer.classList.remove('products__categories-hidden');
+        } else {
+            productsContainer.classList.add('products__categories-hidden');
+        }
+
         categoriesContainer.classList.add('categories-sticky');
-        productsContainer.classList.add('products__categories-hidden');
         headerCategoriesContainer.classList.add('header-categories-sticky');
     } else {
         filtersContainer.classList.remove('filters-sticky');
@@ -23,4 +29,11 @@ toggleFiltersButton.addEventListener('click', () => {
     categoriesContainer.classList.toggle('categories-hidden');
     productsContainer.classList.toggle('products__categories-hidden');
     categoriesContainer.classList.contains('categories-hidden') ? toggleFiltersButton.textContent = 'show filters' : toggleFiltersButton.textContent = 'hide filters';
+})
+
+window.addEventListener('load', () => {
+    if (window.innerWidth < 528) {
+        categoriesContainer.classList.add('categories-hidden');
+        filtersContainer.classList.add('filters-hidden');
+    }
 })

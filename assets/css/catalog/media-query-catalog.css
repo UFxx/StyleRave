@@ -1,0 +1,18 @@
+@media (min-width: 528px) {
+    .open-filters__mobile-button, .close-mobile-filters {
+        display: none;
+    }
+}
+
+@media (max-width: 528px) {
+    .products {
+        justify-content: center;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 346px) {
+    main {
+        padding: 20px 5px;
+    }
+}
