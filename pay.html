@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Julius Sans One | Regular/400 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/8a2fbc0c4d.js" crossorigin="anonymous"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/pay/pay.css">
+        <link rel="stylesheet" href="assets/css/header.css">
+
+        <title>SIGN IN</title>
+    </head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <div class="categorie-photo">
+                <img src="assets/img/categories-icons/blazer.webp" alt="">
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="">help</a></li>
+                    <li><a href="/login.html">sign in</a></li>
+                    <li><a href="/registration.html">sign up</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header">
+            <div class="header-logo">
+                <a href="/index.html">stylerave</a>
+            </div>
+            <marquee behavior="scroll" class="header-text">
+                <p>style... style - this everything</p>
+            </marquee>
+            <div class="header-buttons">
+                <div class="header-search">
+                    <i class="fas fa-search"></i>
+                    <input class="header-search__open" type="search" name="" id="" placeholder="search">
+                </div>
+                <a href="/basket.html"><i class="fas fa-shopping-basket"></i></a>
+                <a href="/profile.html"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="pay-content">
+
+        <div class="pay-container">
+            <div class="pay-title">
+                <p>payment</p>
+            </div>
+            <form>
+                <input type="number" placeholder="card number" id="card-number-input">
+                <div>
+                    <input type="number" placeholder="cvc" id="cvc-number-input">
+                    <input type="" placeholder="MM/YY" id="date-number-input">
+                </div>
+                <input type="text" placeholder="first name and last name">
+                <p class="payment-sum">sum: $<span>1200</span></p>
+                <button type="button" id="pay-button">pay</button>
+            </form>
+        </div>
+
+        <div class="pay-failed-modal-window">
+            <i class="fas fa-times"></i>
+            <p>payment failed</p>
+            <i class="fas fa-times"></i>
+        </div>
+
+    </div>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pay/pay.js"></script>
+    <script src="assets/js/pay/limitMaxLenght.js"></script>
+</body>
+
+</html>
